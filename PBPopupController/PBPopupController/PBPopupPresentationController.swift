@@ -184,6 +184,7 @@ internal class PBPopupPresentationController: UIPresentationController
         }
         
         // Add firebase event here
+        NotificationCenter.default.post(name: Notification.Name("miniplayer_swipe_up"), object: nil)
         
         containerView.frame = self.popupContainerViewFrame()
         
@@ -264,6 +265,7 @@ internal class PBPopupPresentationController: UIPresentationController
         }
         
         // Add firebase event here
+        NotificationCenter.default.post(name: Notification.Name("miniplayer_swipe_down"), object: nil)
         
         self.popupBarForPresentation = self.setupPopupBarForPresentation()
         if let popupBarForPresentation = self.popupBarForPresentation {
