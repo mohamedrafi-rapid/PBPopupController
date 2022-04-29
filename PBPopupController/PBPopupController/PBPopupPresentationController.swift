@@ -183,6 +183,8 @@ internal class PBPopupPresentationController: UIPresentationController
             return
         }
         
+        // Add firebase event here
+        
         containerView.frame = self.popupContainerViewFrame()
         
         let frame = containerView.bounds
@@ -260,6 +262,8 @@ internal class PBPopupPresentationController: UIPresentationController
         else {
             return
         }
+        
+        // Add firebase event here
         
         self.popupBarForPresentation = self.setupPopupBarForPresentation()
         if let popupBarForPresentation = self.popupBarForPresentation {
